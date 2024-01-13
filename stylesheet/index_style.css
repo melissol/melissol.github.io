@@ -59,6 +59,12 @@ html {
   }
 }
 
+@media screen and (max-device-width: 1600px) {
+  #hover {
+    display: none;
+  }
+}
+
 .w3-theme-1 {
   color: white !important;
   background-color: #808080 !important;
