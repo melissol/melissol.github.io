@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="stylesheet/index_style.css">
+  </head>
+
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-button">HOME</a>
+        <div class="w3-dropdown-hover">
+          <button class="w3-button"><i class="fa fa-bars"></i> SECTIONS</a></button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="#section1" class="w3-bar-item w3-button w3-light-grey">The Binary System</a>
+            <a href="#section2" class="w3-bar-item w3-button w3-light-grey">Section 2</a>
+            <a href="#section3" class="w3-bar-item w3-button w3-light-grey">Section 3</a>
+          </div>
+        </div>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space: nowrap">
+        <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">WELCOME <span class="w3-hide-small">TO MY SITE</span></span>
+      </div>
+    </div>
+
+    <!-- Container (Section 1) -->
+    <div class="w3-content w3-container w3-padding-64" id="section1">
+      <h3 class="w3-center">SECTION 1: THE BINARY SYSTEM</h3>
+      <h4>Introduction</h4>
+      <p>
+        Imagine a world where everything is either black or white, on or off, yes or no. This is the world of binary, a universe of zeros and ones, the language of computers. 
+        The binary system, also known as the base-2 number system, is a method of representing numbers that counts by using only two numerals: 0 and 1. 
+        This system is the lifeblood of digital circuits, computer programming, and data structures. 
+        It's the language of choice for computers and digital systems because of its simplicity and efficiency.
+      </p>
+      <h4>The Power of Binary</h4>
+      <p>
+        The binary system is the backbone of modern computing. It's like the DNA of technology, the genetic code that gives life to every digital device we use today. 
+        The importance of the binary system in information theory and computer technology primarily stems from the compact and reliable manner in which 0s and 1s can be represented 
+        in electromechanical devices with two states—such as “on-off,” “open-closed,” or “go-no go”. This binary code can represent any type of data, from text and numbers to images and sound.
+      </p>
+      <p>
+        The binary system follows the concept of everything either being on or off. By using only two states, you can design any logic. 
+        It is much easier to create with the binary system as there are only two values to work on. This simplicity makes it easier to design hardware based on logic.
+      </p>
+      <h4>Binary vs. Decimal: A Tale of Two Systems</h4>
+      <p>
+        The decimal system, or base-10, is the number system that people use daily. It represents numbers using ten digits (0-9). 
+        While the decimal system is more intuitive for humans, the binary system is more efficient for computers.  
+      </p>
+      <p>
+        The fundamental difference between the binary and decimal systems is the number of digits used to represent any given number. 
+        The binary system uses only two digits (0 and 1), while the decimal system uses ten digits (0-9). This difference becomes significant when considering the number of 
+        digits (or bits in the binary system) needed to represent a number. For example, the number 26 in decimal can be represented as 11010 in binary.
+      </p>
+      <h4>Visualizing the Binary System: A Hands-On Approach</h4>
+      <p>
+        Visualizing the binary system can be challenging due to its abstract nature. However, several tools and techniques can help make this task easier. 
+        For instance, binocle is a graphical tool that visualizes binary data by colorizing bytes according to different rules and rendering them as pixels in a 
+        rectangular grid. This allows users to identify interesting parts in large files and reveal image-like regions.
+      </p>
+      <p>
+        Another approach is to use your fingers to represent binary numbers. Each finger can represent a bit, being either in the state of “up” (1) or “down” (0). 
+        This way, one hand can represent numbers from 0 to 31 in binary (instead of 10). Try it!
+      </p>
+      <h4>Conclusion</h4>
+      <p>
+        In conclusion, the binary system is the heartbeat of the digital world. Its simplicity and efficiency make it the perfect language for computers. 
+        Although it may seem less intuitive than the decimal system, understanding the binary system opens up a world of possibilities in the realm of 
+        computing and data representation. It's like learning a new language that allows you to communicate with machines and understand the digital world around us. 
+      </p>
+    </div>
+
+    <!-- Container (Section 2) -->
+    <div class="w3-content w3-container w3-padding-64" id="section2">
+      <h3 class="w3-center">SECTION 2: INTERACTIVE APPS</h3>
+      <p class="w3-center">This section as well as others are still under construction...</p>
+    </div>
+
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">ABOUT</span>
+      </div>
+    </div>
+
+    <!-- Container (About me) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+      <!-- The Grid -->
+		  <div class="w3-row w3-padding">
+        <div class="w3-row w3-container w3-text-dark-grey w3-padding">
+        
+          <div class="w3-row">
+            <div class="w3-col w3-container m4 l3 w3-light-gray">
+              <p><img src="melissopoulos.jpg" alt="stml" style="width:184px"></p>
+            </div> 
+            <div class="w3-col w3-container m8 l9">  
+              <h2 class="w3-text-dark-grey w3-padding w3-xlarge">Übersicht</h2>
+              <p class="w3-large">
+                Dr. Stefanos Melissopoulos ist ein erfahrener Berater mit langjähriger Expertise im Programm- und Projekt-
+                Management in der Photovoltaik, Telekommunikation und Luft-und Raumhafahrt. Sein Fokus liegt auf dem 
+                Management von Großprojekten, von Veränderungen vor Allem bei bereichsübergreifenden Themen und
+                zwischen Mutterkonzern und ausländischen Tochtergesellschaften, Marketing/Vertrieb und Busieness
+                Development. Er verfügt über ein breites Knowhow im Bereich Prozess- und Change Management.
+              </p><hr>
+            </div>
+          </div>
+          
+          <div class="w3-row">
+            <div class="w3-col w3-container m4 l4 w3-light-gray">
+              <h2 class="w3-text-dark-grey w3-padding w3-xlarge">Focus</h2>
+              <ul>
+                <li><p>Project & Program Management (Energie, IT, Mobilkomminikation)</p></li>
+                <li><p>Prozeß Analyse & Optimierung</p></li>
+                <li><p>Change Management</p></li>
+                <li><p>Business Development, Vertrieb</p></li>
+              </ul>
+            </div>
+            <div class="w3-col w3-container m8 l8">
+              <h2 class="w3-text-dark-grey w3-padding w3-xlarge">Berufliche Erfahrung</h2>
+              <h6 class="w3-text-dark-grey">2017 - <span class="w3-tag w3-dark-grey w3-round">Aktuell</span></h6>
+              <p>Freiberufler im internationalen Energie, Telekommunikation & Luftfahrt-Umfeld</p>
+              <h6 class="w3-text-dark-gray">2010 - 2016</h6>
+              <p>Conergy Managing Director, Director Operations and Services, Senior Project Manager</p>
+              <h6 class="w3-text-dark-gray">2002 - 2008</h6>
+              <p>Telecom Italia Mobile Executive Director Network and PMO, Executive Director VAS-Marketing</p>
+              <h6 class="w3-text-dark-gray">1997 - 2001</h6>
+              <p>ABB, Systems Manager Air Navigation, Project Manager Air Traffic Control</p>
+              <h6 class="w3-text-dark-gray">1986 - 1996</h6>
+              <p>Airbus: Logistics Support Analysis, Operations, SW Development</p>
+              <h6 class="w3-text-dark-gray">1992</h6>
+              <p>Dr.-Ing. Luft- und Raumfahrt</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT FORM</span>
+      </div>
+    </div>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom">
+          <i class="fa fa-map-marker" style="width:30px"></i> Frankfurt am Main, GER<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +49 17699512193<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: loukas.melissopoulos@yahoo.com<br>
+        </div>
+        <div class="w3-col m6">
+          <form action="php/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message" rows="4">
+            <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+      <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+      </div>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+
+    <script src="js/common.js"></script>
+  </body>
+</html>
