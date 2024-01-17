@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     fetch('sections/section1.html')
         .then(response => response.text())
         .then(data => document.getElementById('section1').innerHTML = data);
@@ -10,4 +11,8 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('sections/contact.html')
         .then(response => response.text())
         .then(data => document.getElementById('contact').innerHTML = data);
+
+    fetch('sections/footer..html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
 });
