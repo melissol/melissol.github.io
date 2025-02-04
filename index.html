@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- STANDARD -->
+  <title>L-Melis</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!------------------------------------------------------------------------>
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!------------------------------------------------------------------------>
+  <!-- FAVICON -->
+  <link href="img/favicon.png" rel="icon">
+  <!------------------------------------------------------------------------>
+  <!-- SCRIPTS -->
+  <script src="js/common.js"></script>
+  <!------------------------------------------------------------------------>
+</head>
+
+<body>
+  <!-- container (NavBar) -->
+  <div class="w3-top">
+    <!-- START REGULAR -->
+    <div class="w3-bar" id="NavBar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" id="bars"><i class="fa fa-bars"></i></a>
+      <a class="w3-bar-item w3-button" href="#HOME">HOME     </a>
+      <a class="w3-bar-item w3-button w3-hide-small" href="#INFO"><i class="fa fa-user"></i>          ABOUT    </a>
+      <a class="w3-bar-item w3-button w3-hide-small" href="#CVIT"><i class="fa fa-terminal"></i>      RESUME   </a>
+      <!--<a class="w3-bar-item w3-button w3-hide-small" href="#PRJS"><i class="fa fa-pen-to-square"></i> PROJECTS </a>-->
+    <!-- END REGULAR   -->
+    </div>
+      
+    <!-- START MOBILE -->
+    <div class="w3-bar-block w3-white w3-hide w3-hide-medium w3-hide-large" id="NavBarMobile">
+      <a class="w3-bar-item w3-button" href="#INFO" onclick="toggleFunction()">ABOUT</a>
+      <a class="w3-bar-item w3-button" href="#CVIT" onclick="toggleFunction()">RESUME   </a>
+      <!--<a class="w3-bar-item w3-button" href="#PRJS" onclick="toggleFunction()">PROJECTS </a>--> 
+    <!-- END MOBILE   -->
+    </div>
+  </div>
+  <!------------------------------------------------------------------------>
+  <!-- First Parallax Image -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="HOME">
+    <div class="w3-display-middle typewriter" style="white-space: nowrap">
+      <a class="typewrite w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity" data-period="2000" data-type='[ "Hi, Im Loukas..", "I Love to Develop.", "I Love to Program.", "Welcome to my site!" ]'>
+        <span class="wrap"></span>
+      </a>
+    </div>
+  </div>
+  <!------------------------------------------------------------------------>
+  <!-- Container (ABOUT Section) -->
+  <div id="about"></div>
+  <!------------------------------------------------------------------------>
+  <!-- Second Parallax Image -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">RESUME</span>
+    </div>
+  </div>
+  <!------------------------------------------------------------------------>
+  <!-- Container (RESUME Section) -->
+  <div id="resume"></div>
+  <!------------------------------------------------------------------------>
+</body>
+
+<footer class="w3-center w3-black w3-padding-64">
+  <!-- Container (Footer) -->
+  <div id="footer"></div>
+</footer>
+
+</html>

@@ -1,0 +1,155 @@
+/* Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Changed background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; /* Custom font */
+    color: #777; /* New addition */
+    line-height: 1.8; /* New addition */
+}
+
+/* New Additions from style 1.css */
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Lato", sans-serif; /* New addition */
+}
+
+html {
+    height: 100%; /* New addition */
+}
+
+/* Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed; /* New addition */
+    background-position: center; /* New addition */
+    background-repeat: no-repeat; /* New addition */
+    background-size: cover; /* New addition */
+}
+
+.bgimg-1 {
+    background-image: url("/img/background1.jpg"); /* New addition */
+    min-height: 100%; /* New addition */
+}
+
+.bgimg-2 {
+    background-image: url("/img/background2.jpg"); /* New addition */
+    min-height: 400px; /* New addition */
+}
+
+.bgimg-3 {
+    background-image: url("/img/background3.jpg"); /* New addition */
+    min-height: 400px; /* New addition */
+}
+
+.w3-wide {
+    letter-spacing: 10px; /* New addition */
+}
+
+.w3-hover-opacity {
+    cursor: pointer; /* New addition */
+}
+
+.fa-flag:hover {
+    color: #0072b1; /* New addition */
+}
+
+/* Responsive Design for Parallax */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll; /* New addition */
+        min-height: 400px; /* New addition */
+    }
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    padding: 35px 10%;
+}
+
+/* Main Row Styling */
+main.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+
+/* Column Header Styling */
+.col header.title {
+    font-family: 'Roboto', sans-serif; /* Custom font */
+    color: #007bff; /* Custom color */
+    padding: 0px 0px 20px 30px;
+}
+
+/* Column Content Styling */
+.col .contents {
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
+}
+
+/* Box Styling */
+.col .contents .box {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px;
+}
+
+.col .contents .box:hover {
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+}
+
+/* Box Before Styling */
+.col .contents .box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #007bff; /* Custom color */
+    border: 2px solid white;
+}
+
+/* Box Header Styling */
+.box h4 {
+    position: relative;
+    color: #007bff; /* Custom color */
+}
+
+.box h3 {
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: 'Roboto', sans-serif; /* Custom font */
+    color: #444;
+}
+
+.box p {
+    line-height: 1.5; /* Increased line height */
+    color: #666;
+    font-size: 17px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main.row {
+        grid-template-columns: 1fr;
+    }
+    .row .col:nth-child(2) {
+        margin-top: 30px;
+    }
+}
